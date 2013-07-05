@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="328" y="-479"/>
         </scene>
-        <!--View Controller - Hey this is another ViewController-->
+        <!--Second View Controller - Hey this is another ViewController-->
         <scene sceneID="6x6-WJ-bM6">
             <objects>
-                <viewController id="8PK-zd-ufy" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="8PK-zd-ufy" customClass="SecondViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qme-Mm-F88">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -79,6 +79,9 @@
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SecondViewController" superclassName="GAITrackedViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
         </class>
         <class className="ViewController" superclassName="GAITrackedViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>

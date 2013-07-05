@@ -27,6 +27,7 @@
 		350E2410176CA26A00798294 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 350E240E176CA26A00798294 /* libGoogleAnalytics.a */; };
 		350E2413176CA2C200798294 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350E2412176CA2C200798294 /* CoreData.framework */; };
 		350E2415176CA2CC00798294 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350E2414176CA2CC00798294 /* SystemConfiguration.framework */; };
+		3541D2921786B87E00E94552 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3541D2911786B87E00E94552 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		350E240E176CA26A00798294 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
 		350E2412176CA2C200798294 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		350E2414176CA2CC00798294 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3541D2901786B87E00E94552 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		3541D2911786B87E00E94552 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,8 @@
 				350E23E5176CA10300798294 /* MainStoryboard_iPad.storyboard */,
 				350E23E8176CA10400798294 /* ViewController.h */,
 				350E23E9176CA10400798294 /* ViewController.m */,
+				3541D2901786B87E00E94552 /* SecondViewController.h */,
+				3541D2911786B87E00E94552 /* SecondViewController.m */,
 				350E23D1176CA10300798294 /* Supporting Files */,
 			);
 			path = "Google Analytics Example";
@@ -308,6 +313,7 @@
 				350E23D7176CA10300798294 /* main.m in Sources */,
 				350E23DB176CA10300798294 /* AppDelegate.m in Sources */,
 				350E23EA176CA10400798294 /* ViewController.m in Sources */,
+				3541D2921786B87E00E94552 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +512,7 @@
 				350E2404176CA10400798294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		350E2405176CA10400798294 /* Build configuration list for PBXNativeTarget "Google Analytics ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +521,7 @@
 				350E2407176CA10400798294 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
