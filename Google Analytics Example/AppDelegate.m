@@ -21,8 +21,10 @@
     [GAI sharedInstance].dispatchInterval = 10;
     // Optional: set debug to YES for extra debugging information.
     [GAI sharedInstance].debug = YES;
+    
+    // **** REPLACE UA-42269122-1 with your own GA Tracking Id **** //
     // Create tracker instance.
-    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-29359933-5"];
+    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-42269122-1"];
 
     [tracker sendView:@"Application Loaded"];
     
