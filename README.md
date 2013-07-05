@@ -1,5 +1,4 @@
 # Google Analytics Example for iOS
-==================================
 
 This is an example xcode project showing how Google Analytics can be used in iOS applications. The example on Google's site do not include ARC (automatic reference counting).
 
