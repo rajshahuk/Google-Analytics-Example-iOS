@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+// import the Google Analytics Header
+#import "GAI.h"
 
 @interface ViewController ()
 
@@ -18,12 +20,20 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.trackedViewName = @"Google Analytics Example ViewController";
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+// example to send event
+- (IBAction)buttonPressed:(id)sender {
+    [[GAI sharedInstance].defaultTracker sendEventWithCategory:@"Button Pressed"
+                                                    withAction:@"Next Controller"
+                                                     withLabel:@"Press me to go another ViewController"                                               withValue:nil];
 }
 
 @end

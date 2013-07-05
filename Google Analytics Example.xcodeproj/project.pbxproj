@@ -24,6 +24,9 @@
 		350E23F4176CA10400798294 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350E23CC176CA10300798294 /* Foundation.framework */; };
 		350E23FC176CA10400798294 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 350E23FA176CA10400798294 /* InfoPlist.strings */; };
 		350E23FF176CA10400798294 /* Google_Analytics_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 350E23FE176CA10400798294 /* Google_Analytics_ExampleTests.m */; };
+		350E2410176CA26A00798294 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 350E240E176CA26A00798294 /* libGoogleAnalytics.a */; };
+		350E2413176CA2C200798294 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350E2412176CA2C200798294 /* CoreData.framework */; };
+		350E2415176CA2CC00798294 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 350E2414176CA2CC00798294 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,14 @@
 		350E23FB176CA10400798294 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		350E23FD176CA10400798294 /* Google_Analytics_ExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Google_Analytics_ExampleTests.h; sourceTree = "<group>"; };
 		350E23FE176CA10400798294 /* Google_Analytics_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Google_Analytics_ExampleTests.m; sourceTree = "<group>"; };
+		350E2409176CA26A00798294 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		350E240A176CA26A00798294 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		350E240B176CA26A00798294 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		350E240C176CA26A00798294 /* GAITransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITransaction.h; sourceTree = "<group>"; };
+		350E240D176CA26A00798294 /* GAITransactionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITransactionItem.h; sourceTree = "<group>"; };
+		350E240E176CA26A00798294 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
+		350E2412176CA2C200798294 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		350E2414176CA2CC00798294 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +78,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				350E2415176CA2CC00798294 /* SystemConfiguration.framework in Frameworks */,
+				350E2413176CA2C200798294 /* CoreData.framework in Frameworks */,
 				350E23CB176CA10300798294 /* UIKit.framework in Frameworks */,
 				350E23CD176CA10300798294 /* Foundation.framework in Frameworks */,
 				350E23CF176CA10300798294 /* CoreGraphics.framework in Frameworks */,
+				350E2410176CA26A00798294 /* libGoogleAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +103,8 @@
 		350E23BE176CA10300798294 = {
 			isa = PBXGroup;
 			children = (
+				350E2414176CA2CC00798294 /* SystemConfiguration.framework */,
+				350E2412176CA2C200798294 /* CoreData.framework */,
 				350E23D0176CA10300798294 /* Google Analytics Example */,
 				350E23F7176CA10400798294 /* Google Analytics ExampleTests */,
 				350E23C9176CA10300798294 /* Frameworks */,
@@ -108,6 +124,7 @@
 		350E23C9176CA10300798294 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				350E2408176CA26A00798294 /* Google Analytics 2.0 */,
 				350E23CA176CA10300798294 /* UIKit.framework */,
 				350E23CC176CA10300798294 /* Foundation.framework */,
 				350E23CE176CA10300798294 /* CoreGraphics.framework */,
@@ -161,6 +178,20 @@
 				350E23FA176CA10400798294 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		350E2408176CA26A00798294 /* Google Analytics 2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				350E2409176CA26A00798294 /* GAI.h */,
+				350E240A176CA26A00798294 /* GAITrackedViewController.h */,
+				350E240B176CA26A00798294 /* GAITracker.h */,
+				350E240C176CA26A00798294 /* GAITransaction.h */,
+				350E240D176CA26A00798294 /* GAITransactionItem.h */,
+				350E240E176CA26A00798294 /* libGoogleAnalytics.a */,
+			);
+			name = "Google Analytics 2.0";
+			path = "Google Analytics Example/Google Analytics 2.0";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,6 +429,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Google Analytics Example/Google Analytics Example-Prefix.pch";
 				INFOPLIST_FILE = "Google Analytics Example/Google Analytics Example-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Google Analytics Example/Google Analytics 2.0\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -409,6 +444,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Google Analytics Example/Google Analytics Example-Prefix.pch";
 				INFOPLIST_FILE = "Google Analytics Example/Google Analytics Example-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Google Analytics Example/Google Analytics 2.0\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
