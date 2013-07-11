@@ -106,8 +106,6 @@
 		350E23BE176CA10300798294 = {
 			isa = PBXGroup;
 			children = (
-				350E2414176CA2CC00798294 /* SystemConfiguration.framework */,
-				350E2412176CA2C200798294 /* CoreData.framework */,
 				350E23D0176CA10300798294 /* Google Analytics Example */,
 				350E23F7176CA10400798294 /* Google Analytics ExampleTests */,
 				350E23C9176CA10300798294 /* Frameworks */,
@@ -128,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				350E2408176CA26A00798294 /* Google Analytics 2.0 */,
+				350E2414176CA2CC00798294 /* SystemConfiguration.framework */,
+				350E2412176CA2C200798294 /* CoreData.framework */,
 				350E23CA176CA10300798294 /* UIKit.framework */,
 				350E23CC176CA10300798294 /* Foundation.framework */,
 				350E23CE176CA10300798294 /* CoreGraphics.framework */,
